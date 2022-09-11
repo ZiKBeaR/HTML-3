@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+
+<style> 
+
+  table, td, tr { 
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 10cm;       
+  }
+      *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+table {
+  width: auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 2px solid grey;
+}
+
+.inner-table {
+  width: 100%;
+  border: none;
+}
+
+.inner-table td {
+  padding: 10px 0;
+}
+  
+  </style>
+
+<body>
+  <p style="text-align: center;">Example: Nested</p>
+
+  <table>
+<tr>
+  <td rowspan="2" colspan="2"><b>CI</b></td>
+  <td rowspan="2"><b>All Genders</b></td>
+  <td><b>By Gender</b></td>
+</tr>
+
+<tr>
+<td>
+    <table class="inner-table">
+      <td style="text-align: center;"><b>Males</b></td>
+      <td><b>Females</b></td>
+    <tr>
+      <td>9215604</td>
+      <td>4512358</td>
+    </tr>
+
+  </table>
+
+    </td>
+</tr>
+
+<tr>    
+  <td><b>Rural</b></td>
+  <td>6521458</td>
+  <td>4215389</td>
+  <td style="text-align: center;">4152348</td>
+</tr>
+
+</table>
+
+</body>
